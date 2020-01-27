@@ -37,7 +37,7 @@ git commit -m " your comment here"
 git status
 
 # push to github
-git pull
+git push
 
 
 # to pull from git repository:
