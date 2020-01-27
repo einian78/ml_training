@@ -18,7 +18,7 @@ cd ml_training
 #When running bellow command, the first time you pull or push from the remote repository, you'll get asked about the username and password.Afterwards, for consequent communications with the remote repository you don't have to provide the username and password.
 git config --global credential.helper store   
 
-#add new file to your git project:
+#to add modifed file to your git project:
 git add *.*
 or
 git add nameofyourfile
