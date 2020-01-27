@@ -26,11 +26,12 @@ git add nameofyourfile
 #to commit with git:  
 git commit -m " your comment here"
 
-#to pull from git repository:
-git pull
+#Checking the status of the repository
+git status
 
 #push to github
 git pull
 
-#Checking the status of the repository
-git status
+
+#to pull from git repository:
+git pull
