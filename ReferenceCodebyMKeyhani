@@ -1,0 +1,11 @@
+##############Some useful info
+
+#How to break out of run: 
+#Ctrl+C
+
+#Search documentation:
+pydoc -k git
+
+#Make git store your username and password so it doesn't keep asking for it
+git config --global credential.helper store
+#More info here:  https://www.freecodecamp.org/news/how-to-fix-git-always-asking-for-user-credentials/
