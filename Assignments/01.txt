@@ -1,0 +1,10 @@
+Assignment #1
+1-	Explain the concept of Expected Value. (Use some mathematical goodness).
+2-	Write down the equations for mean(m), variance(var) and standard deviation of a population vs. a sample.
+3-	What is the average for a continues variable. With an example.
+4-	Write a python program to calculate mean and variance of n numbers without using any list.
+5-	Write a program to swap values of two variable without using third variable (template variable).
+6-	Write a python program to sort N numbers descending.
+
+
+
