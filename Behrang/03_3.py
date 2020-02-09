@@ -5,6 +5,7 @@ Created on Sun Feb  9 11:14:21 2020
 @author: koushb
 """
 
+#sorting
 lst=[1,6,4,3,8,9,1,5,8,8,7]
 
 n=len(lst)

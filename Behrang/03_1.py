@@ -6,6 +6,8 @@ Created on Sun Feb  9 10:06:34 2020
 """
 
 
+#calculate mean and variance of n numbers
+#################method 1
 n=int(input('enter a number'))
 lst=[]
 for i in range(n):
@@ -26,6 +28,8 @@ for i in lst:
 print(ss/(n-1))
 
 
+################# method 2
+
 s=0
 ss=0
 for i in range(n):
@@ -35,5 +39,12 @@ for i in range(n):
     
 m=s/n
 print(m)
+
+xbar=s/n
+var=(ss-s*s/n)/(n-1)
+
+print('mean=',xbar)   
+print('var=',var)   
+
 
 
