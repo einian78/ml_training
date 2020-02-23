@@ -34,6 +34,15 @@ for i in range(n):
 var=sumofsquares/(n-1)
 print("The variance of the integers entered is: "+str(var))
 
+#the above method calculates mean first and the second loop for variance uses it. It is possible to do both in one loop using math.
+
+#ways to do this with built-in commands
+
+import statistics #another option is to use the numpy
+av2=statistics.mean(a)
+print("The average calculated using the statistics.mean function is: " +str(av2))
+var2=statistics.variance(a)
+print("The variance calculated using the statistics.variance function is: " +str(var2))
 
 """ Assignment 2:
 
@@ -50,7 +59,7 @@ for i in range(n):
 print("The list of integers entered is: ")
 print(b)
 
-#Sort using the Bubble Sort algorithm
+#Sort using the Bubble Sort algorithm. For other sort algorithms see https://www.geeksforgeeks.org/sorting-algorithms/
 for i in range(n):
     for j in range(n-i-1):
         if b[j]>b[j+1]:
