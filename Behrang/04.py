@@ -9,11 +9,11 @@ a=input('enter a number')
 
 lst=[]
 for i in range(len(a)):
-    print(a[i])   
+    #print(a[i])   
     lst.append(int(a[i]))
 
 lst.sort()
-print(lst)
+#print(lst)
 
 b=0
 k=1
@@ -21,6 +21,7 @@ for i in lst:
    b=b+k*i
    k=k*10
 
+print(b)
 lst.sort(reverse=False)
 for i in range(len(lst)):
     n=lst[i] 
@@ -35,3 +36,4 @@ k=1
 for i in lst:
    b=b*10+i
 
+print(b)
