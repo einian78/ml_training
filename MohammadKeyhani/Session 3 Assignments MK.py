@@ -34,3 +34,37 @@ print("The smallest number is: " + str(smallestnumber))
 #I'm not happy with either of these methods because they continue searching for nonzeros even after they have found the first one
 
 
+#Behtang's Method
+#inputing as string has the benefit of not running into overflow errors for large integer inputs
+
+a=input('enter a number: ')
+lst=[]
+for i in range(len(a)):
+    lst.append(int(a[i]))
+    
+lst.sort(reverse=True)
+
+b=0
+for i in lst:
+    b=b*10+i
+    
+print("Largest number is " +str(b))
+
+lst.sort()
+for i in range(len(lst)):
+    n=lst[i]
+    if n!=0:
+        lst[i]=lst[0]
+        lst[0]=n
+        break
+    
+b=0
+for i in lst:
+    b=b*10+i
+    
+print("Smallest number is " +str(b))  
+    
+
+
+        
+    
