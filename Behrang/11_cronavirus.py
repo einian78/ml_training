@@ -65,7 +65,8 @@ for sol in range(ndays):
 #sol=int(fsolve(myfunc2,10))
 endday=basedate+pd.DateOffset(days=sol)
 
-print(endday.strftime("%d %B %Y"))
+print('Predicted total number of infected cases:',int(c))
+print('Predicted infection end date:',endday.strftime("%d %B %Y"))
 
 r=[]
 for i in range(ndays):
