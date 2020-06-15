@@ -13,6 +13,7 @@ from sklearn.metrics import confusion_matrix
 from sklearn.metrics import recall_score
 from sklearn.metrics import roc_auc_score
 from sklearn.metrics import roc_curve
+import seaborn as sns
 
 df=pd.read_csv("../Data/diabetes/diabetes.csv")
 
@@ -47,3 +48,7 @@ plt.plot([0,1],[0,1])
 
 cm=confusion_matrix(y,Pred)
 plt.imshow(cm,cmap='binary')
+
+cm=confusion_matrix(y,Pred,normalize='true')
+
+sns.heatmap(cm,annot=True)
