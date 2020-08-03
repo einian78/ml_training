@@ -114,3 +114,13 @@ plt.colorbar()
 plt.show()
 
 
+clf=lm.LogisticRegression(max_iter=1000)
+clf.fit(X_PCA,y)
+Pred=clf.predict(X_PCA)
+acc=accuracy_score(y,Pred)
+print('accuracy score:',acc)
+
+
+cm=confusion_matrix(y,Pred,normalize='true')
+sns.heatmap(cm,annot=True)
+
